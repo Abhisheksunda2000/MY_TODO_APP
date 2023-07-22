@@ -1,0 +1,135 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2b3e50;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-todo button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo .add-btn {
+  background-color: #2ecc71;
+}
+
+.add-todo .clear-btn {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.table h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #2c3e50;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.sort select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sort button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  margin-left: 10px;
+}
+
+.sort button:hover {
+  background-color: #2980b9;
+}

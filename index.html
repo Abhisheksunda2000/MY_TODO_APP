@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">TODO App</h1>
+      <div class="add-todo">
+        <input type="text" id="todoName" placeholder="Todo Name" />
+        <select id="category">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="study">Study</option>
+        </select>
+        <input type="date" id="date" />
+        <input type="time" id="time" />
+        <button class="add-btn" onclick="addTodo()">Add</button>
+        <button class="clear-btn" onclick="clearForm()">Clear</button>
+      </div>
+      <div class="tables">
+        <div class="table">
+          <h2>Uncompleted Tasks</h2>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Todo Name</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="uncompletedTableBody">
+              <!-- Todo items will be added dynamically here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="table">
+          <h2>Completed Tasks</h2>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Todo Name</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="completedTableBody">
+              <!-- Completed todo items will be added dynamically here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sort">
+        <label for="sortType">Sort By:</label>
+        <select id="sortType">
+          <option value="date">Date</option>
+          <option value="time">Time</option>
+        </select>
+        <button class="sort-btn" onclick="sortTable()">Sort</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
